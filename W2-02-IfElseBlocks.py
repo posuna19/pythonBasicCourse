@@ -1,9 +1,9 @@
 
 def validate_name(userName):
     if len(userName) < 3:
-        print('Name is too short. It should be at least 3 characteres')
+        print('The Name is too short. It should be at least 3 characteres')
     elif len(userName) > 8:
-        print('userName is longer. It should be 8 chars long at max')
+        print('The userName is longer. It should be 8 chars long at max')
     else:
         print('Name is correct')
 
