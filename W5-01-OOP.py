@@ -13,8 +13,16 @@ def formatNextTopic(title):
 
 
 var = "text"
+#type function returns the type of the object
+print("type(): ", end='')
 print(type(var))
+
+#dir function returns the attributes and methods of an object
+print("dir(): ", end='')
 print(dir(var))
+
+#help function returns the documentation of the object
+print("help(): ", end='')
 print(help(''))
 
 class Apple:
@@ -22,8 +30,8 @@ class Apple:
 
 class Apple:
     """ Class that represents an apple """
-    color = ""
-    flavor = ''
+    #color = ""
+    #flavor = ''
     def __init__(self, color, flavor):
         """ constructor to set the initial values """
         self.color = color
@@ -117,4 +125,4 @@ elevator.up()
 print(elevator.current) # should be 1
 
 elevator.go_to(5)
-print(elevattor)
+print(elevator)
