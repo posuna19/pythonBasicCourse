@@ -58,3 +58,4 @@ with open("guests.txt","r") as guests:
             print("{} is checked in".format(guest_to_check))
         else:
             print("{} is not checked in".format(guest_to_check))
+
