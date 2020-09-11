@@ -13,3 +13,4 @@ file.close()
 print("Opening a file with the 'with' block, python closes the file automatically: ")
 with open("spider.txt") as file:
     print(file.readline())
+file.close()
