@@ -1,0 +1,8 @@
+When Executing the python script file make sure you pass a paramater, example:
+	./find_error.py ~/data/fishy.log
+
+When prompt write:
+	CRON ERROR Failed to start
+
+To see the output file:
+	cat ~/data/errors_found.log

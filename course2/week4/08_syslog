@@ -1,0 +1,12 @@
+CRON web app starting
+web app port 404040 started
+CRON POST request by USER (gabriela_perez) logged in
+user reviewed products screen
+CRON GET request by USER (gabriela_perez) logged out
+USER LOGGED OUT
+CRON POST request by USER (horacio_garcia) logged in
+user reviewed seles report screen
+user saved sales info
+CRON GET requested by USER (fabio_utel) logged in
+CRON user saved inventory info
+error...
