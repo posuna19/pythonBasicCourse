@@ -1,5 +1,16 @@
+#!/usr/bin/env python3
+
 import re
 import csv
+import sys
+
+base_name = sys.argv[1]
+
+if base_name is None:
+    print("Error: no report name")
+    sys.exit(1)
+
+#print(f"Report name: {base_name}")
 
 def count_error_types(dict, pattern, line):
     results = re.search(pattern, line.strip())
@@ -45,10 +56,11 @@ rows = []
 for k,v in sortedErrors:
     rows.append({ keys[0] : k , keys[1] : v })
 
-with open("Report1_error_types.csv", "w", newline="") as file2:
+with open(base_name + "_error_types.csv", "w", newline="") as file2:
     csv_writer = csv.DictWriter(file2, fieldnames=keys)
     csv_writer.writeheader()
     csv_writer.writerows(rows)
+    print(base_name + "_error_types.csv was created!")
     file2.close()
 
 # Report 2
@@ -60,8 +72,9 @@ for key,error_dict in sorted_errors_by_users:
     rows2.append({ keys2[0] : key , keys2[1]: error_dict["INFO"], keys2[2]: error_dict["ERROR"] })
 
 # Write the dic to a file. What Format
-with open("Report2_error_by_user.csv", "w", newline="") as file2:
+with open(base_name + "_errors_by_user.csv", "w", newline="") as file2:
     csv_writer = csv.DictWriter(file2, fieldnames=keys2)
     csv_writer.writeheader()
     csv_writer.writerows(rows2)
+    print(base_name + "_errors_by_user.csv was created!")
     file2.close()
