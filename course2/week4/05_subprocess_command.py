@@ -2,7 +2,7 @@
 
 import subprocess
 
-print(subprocess.run(["date"], shell=True)) #In windows does not work, in linux it
+print(subprocess.run(["date"], shell=True)) #In windows does not work, in linux it does
 
 print("hi")
 

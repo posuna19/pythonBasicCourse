@@ -4,11 +4,11 @@ import re
 import csv
 import sys
 
-base_name = sys.argv[1]
-
-if base_name is None:
+if len(sys.argv) <= 1:
     print("Error: no report name")
     sys.exit(1)
+
+base_name = sys.argv[1]
 
 #print(f"Report name: {base_name}")
 

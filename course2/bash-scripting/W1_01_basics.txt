@@ -1,0 +1,4 @@
+echo "A bash script does not necessary has to have a .sh extension."
+echo "It is a standard to put that extension but it works without it."
+
+
